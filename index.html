@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Move4U · סשה הובלות</title>
+  <meta name="description" content="Move4U · סשה הובלות — הובלות דירות, משרדים, פירוק והרכבה, הובלות כבדות. התקשרו 054-752-4092.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container bar">
+      <div class="brand">
+        <img class="logo" src="assets/logo.svg" alt="Move4U logo">
+        <div class="brand-text">
+          <strong>Move4U</strong>
+          <div class="muted">סשה הובלות</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services" data-i18n="nav_services">שירותים</a>
+        <a href="#pricing" data-i18n="nav_pricing">תמחור</a>
+        <a href="#faq" data-i18n="nav_faq">שאלות</a>
+        <a href="#contact" data-i18n="nav_contact">צור קשר</a>
+      </nav>
+      <div class="actions">
+        <div class="lang-switch" aria-label="Language switch">
+          <button data-lang="he" class="active">HE</button>
+          <button data-lang="ru">RU</button>
+          <button data-lang="en">EN</button>
+        </div>
+        <a class="btn phone" href="tel:+972547524092">054-752-4092</a>
+        <a class="btn wa" id="waTop" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 data-i18n="hero_title">הובלות ללא דאגות — אמינות, דייקנות וחיוך</h1>
+        <p class="lead" data-i18n="hero_sub">דירות · משרדים · אריזה · פירוק והרכבה · ציוד כבד</p>
+        <div class="hero-actions">
+          <a class="btn primary" id="waHero" target="_blank" rel="noopener" data-i18n="cta_quote">קבלו הצעת מחיר</a>
+          <a class="btn ghost" href="#services" data-i18n="cta_services">לשירותים</a>
+        </div>
+      </div>
+      <div class="quote card">
+        <h3 data-i18n="quote_title">הצעת מחיר מהירה</h3>
+        <form id="qform">
+          <label><span data-i18n="f_name">שם</span><input name="name" required></label>
+          <label><span data-i18n="f_phone">טלפון</span><input name="phone" required></label>
+          <label><span data-i18n="f_route">מוצא → יעד</span><input name="route" placeholder="ת״א → אשדוד"></label>
+          <label><span data-i18n="f_date">תאריך</span><input name="date" type="date"></label>
+          <label><span data-i18n="f_notes">פרטים</span><textarea name="notes" rows="3" placeholder="קומות? מעלית? פירוק?"></textarea></label>
+          <button type="submit" class="btn primary" data-i18n="f_send">שלח ל‑WhatsApp</button>
+          <small class="muted" data-i18n="f_hint">אפשר לצרף תמונות אחרי השליחה</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2 data-i18n="services_title">שירותים</h2>
+      <div class="grid cards">
+        <article class="card"><h3 data-i18n="s1_h">הובלות דירות</h3><p data-i18n="s1_p">שמיכות ורצועות, הגנה מלאה לרהיטים.</p></article>
+        <article class="card"><h3 data-i18n="s2_h">משרדים</h3><p data-i18n="s2_p">פירוק והרכבה, סימון קרטונים, מינימום השבתה.</p></article>
+        <article class="card"><h3 data-i18n="s3_h">הובלות כבדות</h3><p data-i18n="s3_p">מקררים, כספות, פסנתרים — עם רצועות כתפיים.</p></article>
+        <article class="card"><h3 data-i18n="s4_h">אריזה</h3><p data-i18n="s4_p">קרטונים, עיטוף וניילון בועות — מסודר ובטוח.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section alt">
+    <div class="container">
+      <h2 data-i18n="pricing_title">תמחור</h2>
+      <p class="price-line" data-i18n="pricing_sub">החל מ‑₪349 להובלה מקומית (ת״א וגוש דן). המחיר הסופי לפי מרחק ונפח.</p>
+      <div class="row center gap">
+        <a class="btn primary" id="waPricing" target="_blank" rel="noopener" data-i18n="cta_quote">קבלו הצעת מחיר</a>
+        <a class="btn ghost" href="mailto:info@move4u.co.il" data-i18n="cta_email">או כתבו לנו מייל</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container testimonials">
+      <h2 data-i18n="reviews_title">Отзывы клиентов</h2>
+      <div class="grid">
+        <blockquote class="card" data-i18n="r1">“Все приехало вовремя, аккуратно, ребята помогли с разборкой/сборкой. Рекомендую!” — Анна</blockquote>
+        <blockquote class="card" data-i18n="r2">“הובלה נקייה ומהירה, מחיר הוגן, שירות עם חיוך.” — אבי</blockquote>
+        <blockquote class="card" data-i18n="r3">“Fast, careful, friendly. Will book again.” — Daniel</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2 data-i18n="faq_title">Частые вопросы</h2>
+      <details class="card"><summary data-i18n="fq1_q">Как формируется цена?</summary><p data-i18n="fq1_a">Зависит от расстояния, объёма и условий (этажи, лифт, разборка/сборка). Мы даём точную цену заранее.</p></details>
+      <details class="card"><summary data-i18n="fq2_q">Есть ли страховка груза?</summary><p data-i18n="fq2_a">Да. Мы бережно упаковываем и страхуем груз — спокойствие гарантировано.</p></details>
+      <details class="card"><summary data-i18n="fq3_q">Работаете по выходным?</summary><p data-i18n="fq3_a">Пн–Чт 08:00–20:00, Пт 08:00–14:00. В другие часы — по согласованию.</p></details>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2 data-i18n="contact_title">צור קשר</h2>
+        <p><strong data-i18n="c_phone_l">Телефон:</strong> <a href="tel:+972547524092">054-752-4092</a></p>
+        <p><strong>WhatsApp:</strong> <a id="waContact" target="_blank" rel="noopener">Открыть</a></p>
+        <p><strong>E‑mail:</strong> <a href="mailto:info@move4u.co.il">info@move4u.co.il</a></p>
+        <p><strong data-i18n="c_hours_l">Часы работы:</strong> <span id="hours">א'-ה' 08:00–20:00, ו' 08:00–14:00</span></p>
+        <p><strong data-i18n="c_site_l">Сайт:</strong> <a href="https://www.move4u.co.il" target="_blank" rel="noopener">www.move4u.co.il</a></p>
+      </div>
+      <div class="map-embed card">
+        <iframe title="Map" src="https://www.openstreetmap.org/export/embed.html?bbox=34.7%2C31.6%2C35.2%2C32.3&layer=mapnik" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot">
+      <span class="muted">© <span id="year"></span> Move4U · סשה הובלות</span>
+      <div class="muted">#Move4U — Саша Перевозки</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
